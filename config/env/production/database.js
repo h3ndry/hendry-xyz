@@ -1,6 +1,7 @@
 const parse = require('pg-connection-string').parse;
 
 const { host, port, database, user, password } = parse(process.env.DATABASE_URL);
+const config = parse(process.env.DATABASE_URL);
 
 console.log( host, port, database, user, password, parse )
 
